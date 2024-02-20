@@ -1,0 +1,7 @@
+# Rename to settings.yaml
+input_csv: 'usernames.csv'
+output_csv: 'output.csv'
+base_url: 'https://mantisbt.com'
+login_credentials:
+    username: "michael.tsikerdekis"
+    password: "123456"
