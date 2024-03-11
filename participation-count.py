@@ -41,6 +41,7 @@ def main():
     base_url = settings['base_url']
     login_credentials = settings['login_credentials']
     weeks = settings["weeks"]
+    weekly_actions = settings["weekly_actions"]
 
     driver = webdriver.Chrome()
 
@@ -74,7 +75,7 @@ def main():
                         usernames[username] += text_without_tags.count(pattern)
             
             for username in usernames:
-                writer.writerow([username,usernames.get(username, 0)/weeks])
+                writer.writerow([username,usernames.get(username, 0)/weekly_actions/weeks])
 
     driver.quit()
 

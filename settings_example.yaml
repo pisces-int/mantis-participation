@@ -6,3 +6,4 @@ login_credentials:
     username: "michael.tsikerdekis"
     password: "123456"
 weeks: 9
+weekly_actions: 4
